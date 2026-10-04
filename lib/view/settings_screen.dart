@@ -737,7 +737,7 @@ class SettingsScreenState extends State<SettingsScreen> {
                       decoration: BoxDecoration(
                         color: Colors.red.shade50,
                         border: Border.all(color: Colors.red.shade200),
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(AppRadius.medium),
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

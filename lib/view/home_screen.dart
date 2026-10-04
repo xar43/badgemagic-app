@@ -495,7 +495,7 @@ class _HomeScreenState extends State<HomeScreen>
                       return Card(
                           elevation: 8,
                           shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(14.r)),
+                              borderRadius: BorderRadius.circular(AppRadius.medium.r)),
                           color: Colors.white,
                           child: Padding(
                             padding: EdgeInsets.all(12.w),
@@ -510,7 +510,7 @@ class _HomeScreenState extends State<HomeScreen>
                                     elevation: 0,
                                     shape: RoundedRectangleBorder(
                                         borderRadius:
-                                            BorderRadius.circular(10.r)),
+                                            BorderRadius.circular(AppRadius.medium.r)),
                                     child: SwitchListTile(
                                       secondary: Icon(
                                         animationProvider.isStreaming
@@ -560,7 +560,7 @@ class _HomeScreenState extends State<HomeScreen>
                                               shape: RoundedRectangleBorder(
                                                   borderRadius:
                                                       BorderRadius.circular(
-                                                          12.r)),
+                                                          AppRadius.medium.r)),
                                             ),
                                             onPressed: () async {
                                               await animationProvider
@@ -601,7 +601,7 @@ class _HomeScreenState extends State<HomeScreen>
                                               shape: RoundedRectangleBorder(
                                                   borderRadius:
                                                       BorderRadius.circular(
-                                                          12.r)),
+                                                          AppRadius.medium.r)),
                                             ),
                                             onPressed: () async {
                                               await animationProvider
@@ -650,7 +650,7 @@ class _HomeScreenState extends State<HomeScreen>
                                               shape: RoundedRectangleBorder(
                                                   borderRadius:
                                                       BorderRadius.circular(
-                                                          12.r)),
+                                                          AppRadius.medium.r)),
                                             ),
                                             onPressed: () =>
                                                 _showMoreOptionsBottomSheet(
@@ -1120,7 +1120,7 @@ class _HomeScreenState extends State<HomeScreen>
       context: context,
       isScrollControlled: true,
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(top: Radius.circular(16.r))),
+          borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadius.large.r))),
       builder: (context) {
         return Padding(
           padding: EdgeInsets.only(
@@ -1169,7 +1169,7 @@ class _HomeScreenState extends State<HomeScreen>
                         foregroundColor: Colors.white,
                         padding: EdgeInsets.symmetric(vertical: 10.h),
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8.r))),
+                            borderRadius: BorderRadius.circular(AppRadius.medium.r))),
                     onPressed: () async {
                       final newName = nameController.text.trim();
                       FocusScope.of(context).unfocus();
@@ -1182,7 +1182,7 @@ class _HomeScreenState extends State<HomeScreen>
                             canPop: false,
                             child: AlertDialog(
                               shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.r)),
+                                  borderRadius: BorderRadius.circular(AppRadius.medium.r)),
                               content: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 mainAxisAlignment: MainAxisAlignment.center,
